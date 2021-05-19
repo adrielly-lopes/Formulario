@@ -15,7 +15,7 @@ if(mysqli_query($conn, $sql)){
     echo "Salvei seus dados!";
 }
 else{
-    echo "Erro na conexão" .$sql. "<br>". mysqli_error($conn);
+    echo "Ops! Você já fez seu cadastro!";
 }
 ?>
 
