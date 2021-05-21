@@ -45,7 +45,7 @@
                     <input type="radio" name="formacao" value="Graduacao">Graduação
                 </label>
                 <label>
-                    <input type="radio" name="formacao" value="Pos-graduacao">Pós-Graduação
+                    <input type="radio" name="formacao" value="Pos-Graduacao">Pós-Graduação
                 </label>
                 <label>
                     <input type="radio" name="formacao" value="Mestrado">Mestrado
@@ -91,7 +91,7 @@
 
         <div class="campo">
             <br>
-            <label for="outras_areas">Possuí outras áreas de formação além da selecionada?</label>
+            <label for="outras_areas">Possuí outras áreas de formação além da selecionada? Se sim, qual(is)?</label>
             <textarea rows="6" style="width: 26em" id="outras_areas" name="outras_areas"></textarea>
         </div>
         
