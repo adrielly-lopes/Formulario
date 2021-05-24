@@ -10,7 +10,7 @@
 <body>
     
     <div>
-        <h1 id="titulo">Cadastro</h1>
+        <h1 id="titulo">Ficha de Inscrição</h1>
         <h1 id="subtitulo">Escola de Governo de Corumbá</h1>
         <img id="imagem" src="logo-egov.png">
         <br>
@@ -19,7 +19,7 @@
     <form action="recebe.php" method="POST"> 
         <fieldset class="grupo">
             <div class="campo">
-                <label for="nome">Nome</label>
+                <label for="nome">Nome Completo</label>
                 <input type="text" name="nome" id="nome" required>
             </div>
 
@@ -29,7 +29,7 @@
             </div>
             
             <div class="campo">
-                <label for="telefone">Telefone</label>
+                <label for="telefone">Telefone com DDD</label>
                 <input type="text" name="telefone" id="telefone" required>
             </div>
             
@@ -37,69 +37,80 @@
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" required>
             </div>
+            
+            <div class="campo">
+                <label for="endereco">Endereço Completo com Número</label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            
+            <div class="campo">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" required>
+            </div>
+            
+            <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" required>
+            </div>
+            
+            <div class="campo">
+                <label for="data_nascimento">Data de Nascimento(Dia/Mês/Ano)</label>
+                <input type="text" name="data_nascimento" id="data_nascimento" required> 
+            </div>
+               
         </fieldset>
 
             <div class="campo">
-                <label>Qual é o seu grau acadêmico?</label>
+                <label>Sexo</label>
                 <label>
-                    <input type="radio" name="formacao" value="Graduacao">Graduação
+                    <input type="radio" name="sexo" value="Masculino" required>Masculino
                 </label>
                 <label>
-                    <input type="radio" name="formacao" value="Pos-Graduacao">Pós-Graduação
+                    <input type="radio" name="sexo" value="Feminino" required>Feminino
                 </label>
                 <label>
-                    <input type="radio" name="formacao" value="Mestrado">Mestrado
+                    <input type="radio" name="sexo" value="Outro" required>Outro:
                 </label>
                 <label>
-                    <input type="radio" name="formacao" value="Doutorado">Doutorado
+                    <input type="text" name="sexo" size="30" maxlength="30" value="">
                 </label>
             </div>
-
-        <fieldset class="grupo">
-            <div id="check">
-                <label>Qual é a sua área de formação?</label><br><br>
-                <input type="checkbox" id="formacao1" name="area" value="Administração, Economia e Negócios">
-                <label for="formacao1">Administração, Economia e Negócios</label>
-                <input type="checkbox" id="formacao2" name="area" value="Ciências Sociais">
-                <label for="formacao2">Ciências Sociais</label>
-                <input type="checkbox" id="formacao3" name="area" value="Comunicação e Mídia">
-                <label for="formacao3">Comunicação e Mídia</label>
-                <input type="checkbox" id="formacao4" name="area" value="Design e Arte">
-                <label for="formacao4">Design e Arte</label>
-                <input type="checkbox" id="formacao5" name="area" value="Direito">
-                <label for="formacao5">Direito</label>
-                <input type="checkbox" id="formacao6" name="area" value="Educação">
-                <label for="formacao6">Educação</label>
-                <input type="checkbox" id="formacao7" name="area" value="Engenharia e Arquitetura">
-                <label for="formacao7">Engenharia e Arquitetura</label>
-                <input type="checkbox" id="formacao8" name="area" value="Informação e Tecnologia">
-                <label for="formacao8">Informação e Tecnologia</label>
-                <input type="checkbox" id="formacao9" name="area" value="Saúde">
-                <label for="formacao9">Saúde</label>
-                <input type="checkbox" id="formacao10" name="area" value="Turismo e Gastronomia">
-                <label for="formacao10">Turismo e Gastronomia</label>
-                <input type="checkbox" id="formacao11" name="area" value="Ciências Exatas e da Terra">
-                <label for="formacao11">Ciências Exatas e da Terra</label>
-                <input type="checkbox" id="formacao12" name="area" value="Ciências Biológicas">
-                <label for="formacao12">Ciências Biológicas</label>
-                <input type="checkbox" id="formacao13" name="area" value="Ciências Humanas">
-                <label for="formacao13">Ciências Humanas</label>
-                <input type="checkbox" id="formacao14" name="area" value="Letras e Linguística">
-                <label for="formacao14">Letras e Linguística</label>
+                  
+            <div class="campo">
+                <label>Nível de Formação</label>
+                <label>
+                    <input type="radio" name="formacao" value="Graduacao" required>Graduação
+                </label>
+                <label>
+                    <input type="radio" name="formacao" value="Pos-Graduacao" required>Pós-Graduação
+                </label>
+                <label>
+                    <input type="radio" name="formacao" value="Mestrado" required>Mestrado
+                </label>
+                <label>
+                    <input type="radio" name="formacao" value="Doutorado" required>Doutorado
+                </label>
             </div>
-        </fieldset>
 
         <div class="campo">
             <br>
-            <label for="outras_areas">Possuí outras áreas de formação além da selecionada? Se sim, qual(is)?</label>
-            <textarea rows="6" style="width: 26em" id="outras_areas" name="outras_areas"></textarea>
+            <label for="area">Área(s) de Formação(ões)</label>
+            <textarea rows="4" style="width: 20em" id="area" name="area" required></textarea>
         </div>
         
         <div class="campo">
             <br>
-            <label for="curso">Qual(is) seu(s) curso(s)?</label>
-            <textarea rows="6" style="width: 26em" id="curso" name="curso"></textarea>
+            <label for="curso">Curso(s)</label>
+            <textarea rows="4" style="width: 20em" id="curso" name="curso" required></textarea>
         </div>
+        
+        <fieldset class="grupo">
+            <div id="check">
+                <label>Marcar antes de se cadastrar</label><br><br>
+                <input type="checkbox" id="termo" name="termo" value="termo_aceito">
+                <label for="termo">Declaro que aceito as condições descritas no Edital n° 07/01/2021, que rege este processo seletivo e, se convocado para contratação, apresentarei todos os documentos comprobatórios dos requisitos pessoais, de escolaridade e profissionais para assinar o contrato.</label>
+            </div>
+        </fieldset>
         
         <button class="botao" type="submit" onsubmit="">Cadastrar</button>
 
