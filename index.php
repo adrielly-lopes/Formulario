@@ -54,8 +54,8 @@
             </div>
             
             <div class="campo">
-                <label for="data_nascimento">Data de Nascimento(Dia/Mês/Ano)</label>
-                <input type="text" name="data_nascimento" id="data_nascimento" required> 
+                <label for="nascimento">Data de Nascimento(Dia/Mês/Ano)</label>
+                <input type="text" name="nascimento" id="nascimento" required> 
             </div>
                
         </fieldset>
@@ -69,10 +69,7 @@
                     <input type="radio" name="sexo" value="Feminino" required>Feminino
                 </label>
                 <label>
-                    <input type="radio" name="sexo" value="Outro" required>Outro:
-                </label>
-                <label>
-                    <input type="text" name="sexo" size="30" maxlength="30" value="">
+                    <input type="radio" name="sexo" value="Outro" required>Outro
                 </label>
             </div>
                   
