@@ -1,22 +1,22 @@
 <?php
 include_once('conexao.php');
 
-$nome = $_POST['nome'];
-$cpf = $_POST['cpf'];
-$telefone = $_POST['telefone'];
-$email = $_POST['email'];
-$endereco = $_POST['endereco'];
-$bairro = $_POST['bairro'];
-$cep = $_POST['cep'];
-$data_nascimento = $_POST['data_nascimento'];
-$sexo = $_POST['sexo'];
-$formacao = $_POST['formacao'];
-$area = $_POST['area'];
-$curso = $_POST['curso'];
-$termo = $_POST['termo'];
+$Nome = $_POST['nome'];
+$CPF = $_POST['cpf'];
+$Telefone = $_POST['telefone'];
+$Email = $_POST['email'];
+$Endereco = $_POST['endereco'];
+$Bairro = $_POST['bairro'];
+$CEP = $_POST['cep'];
+$Nascimento = $_POST['nascimento'];
+$Sexo = $_POST['sexo'];
+$Formacao = $_POST['formacao'];
+$Area = $_POST['area'];
+$Curso = $_POST['curso'];
+$Termo = $_POST['termo'];
 
 mysqli_select_db($conn, '$database');
-$sql = "INSERT INTO cadastro (nome, cpf, telefone, email, endereco, bairro, cep, data_nascimento, sexo, formacao, area, curso, termo) VALUES ('$nome', '$cpf', '$telefone', '$email', '$endereco', '$bairro', $cep', '$data_nascimento, '$sexo', '$formacao', '$area', '$curso', '$termo)";
+$sql = "INSERT INTO candidato (Nome, CPF, Telefone, Email, Endereco, Bairro, CEP, Nascimento, Sexo, Formacao, Area, Curso, Termo) VALUES ('$Nome', '$CPF', '$Telefone', '$Email', '$Endereco', '$Bairro', '$CEP', '$Nascimento' , '$Sexo', '$Formacao', '$Area', '$Curso', '$Termo')";
 
 if(mysqli_query($conn, $sql)){
     echo "Salvei seus dados!";
