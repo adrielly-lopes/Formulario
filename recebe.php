@@ -19,9 +19,9 @@ mysqli_select_db($conn, '$database');
 $sql = "INSERT INTO candidato (Nome, CPF, Telefone, Email, Endereco, Bairro, CEP, Nascimento, Sexo, Formacao, Area, Curso, Termo) VALUES ('$Nome', '$CPF', '$Telefone', '$Email', '$Endereco', '$Bairro', '$CEP', '$Nascimento' , '$Sexo', '$Formacao', '$Area', '$Curso', '$Termo')";
 
 if(mysqli_query($conn, $sql)){
-    echo "Salvei seus dados!";
+    echo "Dados enviados com sucesso!";
 }
 else{
-    echo "Ops! Você já fez seu cadastro!";
+    echo "Você já fez sua inscrição!";
 }
 ?>
