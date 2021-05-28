@@ -24,7 +24,7 @@
             </div>
 
             <div class="campo">
-                <label for="cpf">CPF</label>
+                <label for="cpf">CPF(Apenas Números)</label>
                 <input type="text" name="cpf" id="cpf" required>
             </div>
             
@@ -104,7 +104,7 @@
         <fieldset class="grupo">
             <div id="check">
                 <label>Marcar antes de se cadastrar</label><br><br>
-                <input type="checkbox" id="termo" name="termo" value="termo_aceito">
+                <input type="checkbox" id="termo" name="termo" value="termo_aceito" required>
                 <label for="termo">Declaro que aceito as condições descritas no Edital n° 07/01/2021, que rege este processo seletivo e, se convocado para contratação, apresentarei todos os documentos comprobatórios dos requisitos pessoais, de escolaridade e profissionais para assinar o contrato.</label>
             </div>
         </fieldset>
