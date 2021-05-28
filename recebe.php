@@ -16,7 +16,7 @@ $Curso = $_POST['curso'];
 $Termo = $_POST['termo'];
 
 mysqli_select_db($conn, '$database');
-$sql = "INSERT INTO candidato (Nome, CPF, Telefone, Email, Endereco, Bairro, CEP, Nascimento, Sexo, Formacao, Area, Curso, Termo) VALUES ('$Nome', '$CPF', '$Telefone', '$Email', '$Endereco', '$Bairro', '$CEP', '$Nascimento' , '$Sexo', '$Formacao', '$Area', '$Curso', '$Termo')";
+$sql = "INSERT INTO candidatos (Nome, CPF, Telefone, Email, Endereco, Bairro, CEP, Nascimento, Sexo, Formacao, Area, Curso, Termo) VALUES ('$Nome', '$CPF', '$Telefone', '$Email', '$Endereco', '$Bairro', '$CEP', '$Nascimento' , '$Sexo', '$Formacao', '$Area', '$Curso', '$Termo')";
 
 if(mysqli_query($conn, $sql)){
     echo "Dados enviados com sucesso!";
