@@ -1,10 +1,10 @@
-CREATE DATABASE `cadastro`;
-USE `cadastro`;
+CREATE DATABASE `banco de cadastro`;
+USE `banco de cadastro`;
 
-CREATE TABLE `cadastrados` (
-	`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+CREATE TABLE `candidatos` (
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
     `Nome` varchar(250) NOT NULL,
-    `CPF` varchar(100) NOT NULL UNIQUE,
+    `CPF` int(11) NOT NULL UNIQUE,
     `Telefone` varchar(100) NOT NULL,
     `Email` varchar(200) NOT NULL,
     `Endereco` varchar(150) NOT NULL,
@@ -15,6 +15,6 @@ CREATE TABLE `cadastrados` (
     `Formacao` varchar(100) NOT NULL,
     `Area` varchar(150) NOT NULL,
     `Curso` varchar(150) NOT NULL,
-    `Termo` varchar(100),
+    `Termo` varchar(100) NOT NULL,
     PRIMARY KEY (`id`)
 );
