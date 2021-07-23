@@ -3,7 +3,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$dbname = "banco de cadastro";
+$dbname = "banco de cadastros";
 
 $conn= mysqli_connect($servidor, $usuario, $senha, $dbname);
 
