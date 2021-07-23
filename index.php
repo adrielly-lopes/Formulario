@@ -106,6 +106,7 @@
                 <label>Marcar antes de se cadastrar</label><br><br>
                 <input type="checkbox" id="termo" name="termo" value="termo_aceito" required>
                 <label for="termo">Declaro que aceito as condições descritas no Edital n° 07/01/2021, que rege este processo seletivo e, se convocado para contratação, apresentarei todos os documentos comprobatórios dos requisitos pessoais, de escolaridade e profissionais para assinar o contrato.</label>
+                <a href="http://do.corumba.ms.gov.br/corumba/portal/visualizacoes/pdf/4096/#/p:1/e:4096">Clique aqui para acessar o edital</a>
             </div>
         </fieldset>
         
