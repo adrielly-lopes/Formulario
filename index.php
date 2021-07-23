@@ -25,7 +25,7 @@
 
             <div class="campo">
                 <label for="cpf">CPF(Apenas Números)</label>
-                <input type="text" name="cpf" id="cpf" required>
+                <input type="number" name="cpf" id="cpf" required>
             </div>
             
             <div class="campo">
