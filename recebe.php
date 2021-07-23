@@ -22,6 +22,6 @@ if(mysqli_query($conn, $sql)){
     echo "Dados enviados com sucesso!";
 }
 else{
-    echo "Você já fez sua inscrição!";
+    echo "Você já fez sua inscrição! Ou inseriu dados inválidos!";
 }
 ?>
