@@ -11,8 +11,8 @@
     
     <div>
         <h1 id="titulo">Ficha de Inscrição</h1>
-        <h1 id="subtitulo">Escola de Governo de Corumbá</h1>
-        <img id="imagem" src="logo-egov.png">
+        <h1 id="subtitulo">Cadastramento</h1>
+        <img id="imagem" src="homer.jpg">
         <br>
     </div>
     
@@ -22,7 +22,6 @@
                 <label for="nome">Nome Completo</label>
                 <input type="text" name="nome" id="nome" required>
             </div>
-
             <div class="campo">
                 <label for="cpf">CPF(Apenas Números)</label>
                 <input type="number" name="cpf" id="cpf" required>
@@ -59,7 +58,6 @@
             </div>
                
         </fieldset>
-
             <div class="campo">
                 <label>Sexo</label>
                 <label>
@@ -88,7 +86,6 @@
                     <input type="radio" name="formacao" value="Doutorado" required>Doutorado
                 </label>
             </div>
-
         <div class="campo">
             <br>
             <label for="area">Área(s) de Formação(ões)</label>
@@ -105,14 +102,12 @@
             <div id="check">
                 <label>Marcar antes de se cadastrar</label><br><br>
                 <input type="checkbox" id="termo" name="termo" value="termo_aceito" required>
-                <label for="termo">Declaro que aceito as condições descritas no Edital n° 07/01/2021, que rege este processo seletivo e, se convocado para contratação, apresentarei todos os documentos comprobatórios dos requisitos pessoais, de escolaridade e profissionais para assinar o contrato.</label>
-                <a href="http://do.corumba.ms.gov.br/corumba/portal/visualizacoes/pdf/4096/#/p:1/e:4096">Clique aqui para acessar o edital</a>
+                <label for="termo">Declaro que li e aceito as condições.</label>
+                <a href="site">Clique aqui para acessar o site</a>
             </div>
         </fieldset>
         
         <button class="botao" type="submit" onsubmit="">Cadastrar</button>
-
     </form>
-
 </body>
 </html>
